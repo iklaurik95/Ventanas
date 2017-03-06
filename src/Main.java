@@ -55,14 +55,18 @@ public class Main extends JFrame {
 		lblContrasena.setBounds(50, 118, 67, 14);
 		getContentPane().add(lblContrasena);
 		
-		JButton btnGuardar = new JButton("Guardar");
-		btnGuardar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				System.out.println("Guardado");		
+		JButton btnLogin = new JButton("Login");
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {				
+				if(textFieldUsuario.getText().equals("ikaslea") && passwordField.getText().equals("1234")){
+					btnLogin.setBackground(Color.GREEN);
+				}else{
+					btnLogin.setBackground(Color.RED);
+				}
 			}
 		});
-		btnGuardar.setBounds(97, 170, 89, 23);
-		getContentPane().add(btnGuardar);
+		btnLogin.setBounds(97, 170, 89, 23);
+		getContentPane().add(btnLogin);
 		
 		textFieldUsuario = new JTextField();
 		textFieldUsuario.setBounds(161, 69, 86, 20);
