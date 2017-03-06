@@ -63,6 +63,7 @@ public class Main extends JFrame {
 				}else{
 					btnLogin.setBackground(Color.RED);
 				}
+			
 			}
 		});
 		btnLogin.setBounds(97, 170, 89, 23);
@@ -76,5 +77,6 @@ public class Main extends JFrame {
 		passwordField = new JPasswordField();
 		passwordField.setBounds(161, 115, 86, 20);
 		getContentPane().add(passwordField);
+		
 	}
 }
